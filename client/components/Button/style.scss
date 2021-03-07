@@ -1,0 +1,24 @@
+@use "../../assets/colors";
+
+.button {
+    padding: 4px 8px;
+    background-color: colors.$color1;
+    border: 1px solid colors.$color3;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: colors.$color3;
+    border-color: colors.$color4;
+    color: colors.$color1;
+}
+
+.button:active {
+    background-color: colors.$color1;
+    border-color: colors.$color3;
+    color: black;
+}
+
+.button:focus {
+    outline: none;
+}

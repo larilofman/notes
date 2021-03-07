@@ -1,0 +1,15 @@
+@use "../../assets/colors";
+
+.note {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 20vw;
+    border: 1px solid colors.$color3;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    padding: 2px;
+    align-items: center;
+    background-color: colors.$color2;
+}
