@@ -17,7 +17,7 @@ const NoteForm = ({ postNote }) => {
 
   return (
     <div className="note-form">
-      <form action="submit">
+      <form action="submit" onSubmit={handleSubmit}>
         <label htmlFor="new-note">
           Add new note
           <input
@@ -31,7 +31,6 @@ const NoteForm = ({ postNote }) => {
         </label>
         <Button
           type="submit"
-          onClick={handleSubmit}
           disabled={!note}
         >
           Add

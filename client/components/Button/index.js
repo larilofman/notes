@@ -3,7 +3,7 @@ import './style.scss';
 
 const Button = ({ onClick, disabled, children }) => (
   <button
-    type="button"
+    type="submit"
     onClick={onClick}
     className="button"
     disabled={disabled}
