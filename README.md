@@ -37,14 +37,14 @@ After cloning or downloading the project, install the dependencies with `npm ins
 
 ### Running
 
-Run the app in development mode on port 8000 with `npm run dev`.
+Run the app in development mode on port 8000 with `npm run dev`.  
 Build the app with `npm run build` and start it on port 8000 with `npm start`.
 
 ## Usage
 
 ### Add Note
 
-Type a note in the input box at the bottom of the application and click 'add'.
+Type a note in the input box at the top of the application and click 'add'.
 
 ### Delete Note
 
@@ -57,4 +57,4 @@ larwazor@gmail.com
 ## Acknowledgements
 * [Single repository boilerplate](https://github.com/fullstack-hy2020/create-app)
 * [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-* [TypeScript](https://www.typescriptlang.org/)
+* [Fullstack Open](https://fullstackopen.com/)
