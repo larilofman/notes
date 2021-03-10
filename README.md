@@ -57,4 +57,4 @@ larwazor@gmail.com
 ## Acknowledgements
 * [Single repository boilerplate](https://github.com/fullstack-hy2020/create-app)
 * [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-* [Fullstack Open] (https://fullstackopen.com/)
+* [Fullstack Open](https://fullstackopen.com/)
