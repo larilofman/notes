@@ -37,14 +37,14 @@ After cloning or downloading the project, install the dependencies with `npm ins
 
 ### Running
 
-Run the app in development mode on port 8000 with `npm run dev`.
+Run the app in development mode on port 8000 with `npm run dev`.  
 Build the app with `npm run build` and start it on port 8000 with `npm start`.
 
 ## Usage
 
 ### Add Note
 
-Type a note in the input box at the bottom of the application and click 'add'.
+Type a note in the input box at the top of the application and click 'add'.
 
 ### Delete Note
 
