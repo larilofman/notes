@@ -13,7 +13,7 @@
     color: colors.$color1;
 }
 
-.button:active {
+.button:not([disabled]):active {
     background-color: colors.$color1;
     border-color: colors.$color3;
     color: black;
