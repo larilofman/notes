@@ -4,18 +4,19 @@
     height: 10vh;
     background-color: colors.$color2;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid colors.$color3;
 }
 
-.form-input {
+.form-text-field {
     margin: 0 4px;
     background-color: colors.$color1;
     border: 1px solid colors.$color3;
     border-radius: 4px;
 }
 
-.form-input:focus{
+.form-text-field:focus{
     outline-color: colors.$color4;
 }

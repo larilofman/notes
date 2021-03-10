@@ -14,10 +14,8 @@
   * [Installation](#installation)
   * [Running](#running)
 * [Usage](#usage)
-  * [Movement](#movement)
-* [Major Components](#major-components)
-  * [Redux State](#redux-state)
-* [Roadmap](#roadmap)
+  * [Add Note](#add-note)
+  * [Delete Note](#delete-note)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
@@ -39,21 +37,18 @@ After cloning or downloading the project, install the dependencies with `npm ins
 
 ### Running
 
+Run the app in development mode on port 8000 with `npm run dev`.
+Build the app with `npm run build` and start it on port 8000 with `npm start`.
+
 ## Usage
 
-### Movement
+### Add Note
 
-qweqweqwe
+Type a note in the input box at the bottom of the application and click 'add'.
 
-## Major Components
+### Delete Note
 
-### Redux State
-
-adadasdsasd
-
-## Roadmap
-
-* Add stuff
+Click the 'delete' button next to a note to delete it.
 
 ## Contact
 

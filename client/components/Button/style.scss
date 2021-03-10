@@ -7,7 +7,7 @@
     border-radius: 4px;
 }
 
-.button:hover {
+.button:not([disabled]):hover {
     background-color: colors.$color3;
     border-color: colors.$color4;
     color: colors.$color1;
@@ -22,3 +22,4 @@
 .button:focus {
     outline: none;
 }
+

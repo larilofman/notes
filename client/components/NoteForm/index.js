@@ -7,8 +7,10 @@ const NoteForm = ({ postNote }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    postNote(note);
-    setNote('');
+    if (note) {
+      postNote(note);
+      setNote('');
+    }
   };
 
   const handleChange = ({ target }) => setNote(target.value);
@@ -19,7 +21,8 @@ const NoteForm = ({ postNote }) => {
         <label htmlFor="new-note">
           Add new note
           <input
-            className="form-input"
+            className="form-text-field"
+            placeholder="Enter a note."
             name="new-note"
             id="new-note"
             value={note}
@@ -29,6 +32,7 @@ const NoteForm = ({ postNote }) => {
         <Button
           type="submit"
           onClick={handleSubmit}
+          disabled={!note}
         >
           Add
         </Button>

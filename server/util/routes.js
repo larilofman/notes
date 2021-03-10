@@ -1,10 +1,10 @@
 const Router = require('express');
-const messages = require('@controllers/messagesController');
+const notes = require('@controllers/notesController');
 
 const router = Router();
 
-router.get('/messages', messages.getAll);
-router.post('/messages', messages.create);
-router.delete('/messages/:id', messages.destroy);
+router.get('/notes', notes.getAll);
+router.post('/notes', notes.create);
+router.delete('/notes/:id', notes.destroy);
 
 module.exports = router;
