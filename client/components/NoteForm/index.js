@@ -30,6 +30,7 @@ const NoteForm = ({ postNote }) => {
           />
         </label>
         <Button
+          id="add-button"
           type="submit"
           disabled={!note}
         >

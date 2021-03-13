@@ -20,8 +20,19 @@ const destroy = async (req, res) => {
   res.sendStatus(200);
 };
 
+const destroyAll = async (req, res) => {
+  console.log('destroyAll');
+  if (process.env.NODE_ENV === 'test') {
+    await Note.deleteMany({});
+    res.sendStatus(200);
+  } else {
+    res.sendStatus(403);
+  }
+};
+
 module.exports = {
   getAll,
   create,
   destroy,
+  destroyAll,
 };

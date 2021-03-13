@@ -5,7 +5,10 @@ import Button from '../Button';
 const Note = ({ note, deleteNote }) => (
   <li className="note">
     {note.text}
-    <Button onClick={deleteNote(note)}>
+    <Button
+      onClick={deleteNote(note)}
+      id={`delete-${note.text}`}
+    >
       Delete
     </Button>
   </li>

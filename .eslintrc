@@ -2,7 +2,8 @@
   "extends": "airbnb",
   "parser": "babel-eslint",
   "env": {
-    "browser": true
+    "browser": true,
+    "jest/globals": true
   },
   "rules": {
     "semi": "error",
@@ -22,6 +23,11 @@
     ],
     "no-console": "off",
     "no-underscore-dangle": "off",
-    "no-param-reassign": "off"
-  }
+    "no-param-reassign": "off",
+    "react/jsx-props-no-spreading": 0
+  },
+  "plugins": [
+    "react",
+    "jest"
+  ]
 }
