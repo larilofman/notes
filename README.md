@@ -2,7 +2,7 @@
   <p align="center">
     Notes app for Fullstack open course's CI/CD part.
     <br />
-    <a href=# target="_blank"><strong>Open app on Heroku »</strong></a>
+    <a href="https://cicd-notes.herokuapp.com/" target="_blank"><strong>Open app on Heroku »</strong></a>
   </p>
   
 ## Table of Contents
