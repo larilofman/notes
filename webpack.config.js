@@ -1,15 +1,15 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const sass = require('sass')
-const webpack = require('webpack')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const sass = require('sass');
+const webpack = require('webpack');
 
 module.exports = (env, argv) => {
-  const { mode } = argv
+  const { mode } = argv;
   const additionalPlugins = mode === 'production'
     ? []
-    : [new webpack.HotModuleReplacementPlugin()] // Enable hot module replacement
+    : [new webpack.HotModuleReplacementPlugin()]; // Enable hot module replacement
 
-  const additionalEntries = mode === 'production' ? [] : ['webpack-hot-middleware/client?http://localhost:8000']
+  const additionalEntries = mode === 'production' ? [] : ['webpack-hot-middleware/client?http://localhost:8000'];
 
   return {
     mode,
@@ -72,5 +72,5 @@ module.exports = (env, argv) => {
       }),
       ...additionalPlugins,
     ],
-  }
-}
+  };
+};

@@ -4,7 +4,7 @@ import { render, fireEvent } from '@testing-library/react';
 import Note from './index';
 
 test('renders content', () => {
-  const testString = 'Testiteksti'
+  const testString = 'Testiteksti';
 
   const note = {
     text: testString,
@@ -17,11 +17,11 @@ test('renders content', () => {
     <Note note={note} deleteNote={mockHandler} />,
   );
 
-  expect(component.container).toHaveTextContent(testString,);
+  expect(component.container).toHaveTextContent(testString);
 });
 
 test('clicking delete button calls event handler', () => {
-  const testString = 'Testiteksti'
+  const testString = 'Testiteksti';
 
   const note = {
     text: testString,
@@ -34,8 +34,8 @@ test('clicking delete button calls event handler', () => {
     <Note note={note} deleteNote={mockHandler} />,
   );
 
-  const deleteButton = component.getByText("Delete")
+  const deleteButton = component.getByText('Delete');
   fireEvent.click(deleteButton);
 
-  expect(mockHandler.mock.calls).toHaveLength(1)
+  expect(mockHandler.mock.calls).toHaveLength(1);
 });
