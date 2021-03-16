@@ -21,7 +21,7 @@ jobs:
       run: npm run build
     - name: test
       run: npm run test
-    - name: e2e tests
+    - name: e2e test
       uses: cypress-io/github-action@v2
       env:
         TEST_MONGODB_URI: ${{secrets.TEST_MONGODB_URI}}
@@ -29,3 +29,9 @@ jobs:
         command: npm run test:e2e
         start: npm run start:test
         wait-on: http://localhost:8000
+    - uses: akhileshns/heroku-deploy@v3.7.8
+        if: ${{ github.event_name == 'push' }}
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "cicd-notes"
+          heroku_email: ${{secrets.HEROKU_API_EMAIL}}
