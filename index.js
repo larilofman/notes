@@ -39,6 +39,9 @@ if (!inProduction) {
   const devMiddleware = middleware(compiler);
   app.use(devMiddleware);
   app.use(hotMiddleWare(compiler));
+  app.use('/health', (req, res) => {
+    res.send('ok');
+  });
   app.use('*', (req, res, next) => {
     const filename = path.join(compiler.outputPath, 'index.html');
     devMiddleware.waitUntilValid(() => {
@@ -55,6 +58,9 @@ if (!inProduction) {
   const INDEX_PATH = path.resolve(DIST_PATH, 'index.html');
 
   app.use(express.static(DIST_PATH));
+  app.use('/health', (req, res) => {
+    res.send('ok');
+  });
   app.get('*', (req, res) => res.sendFile(INDEX_PATH));
 }
 
