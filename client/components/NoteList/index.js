@@ -7,7 +7,7 @@ const NoteList = ({ notes, deleteNote }) => {
   if (!notes.length) {
     return (
       <div>
-        <h3 className="loading-text-container">Loading</h3>
+        <h3 className="loading-text-container">Loading notes...</h3>
       </div>
 
     );
