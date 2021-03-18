@@ -3,7 +3,15 @@ import './style.scss';
 import Note from '../Note';
 
 const NoteList = ({ notes, deleteNote }) => {
-  if (!notes) return null;
+  console.log(notes);
+  if (!notes.length) {
+    return (
+      <div>
+        <h3 className="loading-text-container">Loading</h3>
+      </div>
+
+    );
+  }
 
   const handleDelete = (note) => () => {
     deleteNote(note);
