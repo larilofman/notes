@@ -9,6 +9,7 @@ interface Props {
 }
 
 const NoteList: React.FC<Props> = ({ notes, deleteNote }) => {
+  console.log(notes);
   if (!notes.length) {
     return (
       <div>

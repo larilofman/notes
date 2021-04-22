@@ -1,8 +1,14 @@
 import React from 'react';
 import './style.scss';
 import Button from '../Button';
+import { NoteType } from '../../../types';
 
-const Note = ({ note, deleteNote }) => (
+interface Props {
+  note: NoteType,
+  deleteNote: (note: NoteType) => void
+}
+
+const Note: React.FC<Props> = ({ note, deleteNote }) => (
   <li className="note">
     {note.text}
     <Button
