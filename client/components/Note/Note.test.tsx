@@ -1,12 +1,14 @@
+/// <reference types="jest" />
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, fireEvent } from '@testing-library/react';
 import Note from './index';
+import { NoteType } from '../../../types';
 
 test('renders content', () => {
   const testString = 'Testiteksti';
 
-  const note = {
+  const note: NoteType = {
     text: testString,
     id: 0,
   };
