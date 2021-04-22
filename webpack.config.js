@@ -25,12 +25,13 @@ module.exports = (env, argv) => {
         Assets: path.resolve(__dirname, 'client/assets/'),
         '@root': path.resolve(__dirname),
       },
+      extensions: ['.ts', '.tsx', '.ts', '.js'],
     },
     module: {
       rules: [
         {
           // Load JS files
-          test: /\.js$/,
+          test: /\.(js|ts|tsx)$/,
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader',

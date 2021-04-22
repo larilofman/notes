@@ -1,9 +1,14 @@
 import React from 'react';
 import './style.scss';
 import Note from '../Note';
+import { NoteType } from '../../../types';
 
-const NoteList = ({ notes, deleteNote }) => {
-  console.log(notes);
+interface Props {
+  notes: NoteType[],
+  deleteNote: (note: NoteType) => Promise<void>
+}
+
+const NoteList: React.FC<Props> = ({ notes, deleteNote }) => {
   if (!notes.length) {
     return (
       <div>
@@ -13,7 +18,7 @@ const NoteList = ({ notes, deleteNote }) => {
     );
   }
 
-  const handleDelete = (note) => () => {
+  const handleDelete = (note: NoteType) => () => {
     deleteNote(note);
   };
 
