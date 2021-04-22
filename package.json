@@ -14,8 +14,8 @@
     "cypress:open": "cypress open"
   },
   "engines": {
-    "node": "12.1.0",
-    "npm": "6.9.0"
+    "node": "12.14.1",
+    "npm": "6.13.4"
   },
   "author": "Lari Löfman",
   "license": "ISC",
