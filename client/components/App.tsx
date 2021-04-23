@@ -1,5 +1,5 @@
 import React from 'react';
-import NotesView from 'Components/NotesView';
+import NotesView from './NotesView';
 
 const App = () => (
   <>
