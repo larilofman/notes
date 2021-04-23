@@ -12,7 +12,7 @@ const Note: React.FC<Props> = ({ note, deleteNote }) => (
   <li className="note">
     {note.text}
     <Button
-      onClick={deleteNote(note)}
+      onClick={() => deleteNote(note)}
       id={`delete-${note.text}`}
     >
       Delete

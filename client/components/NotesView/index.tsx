@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { getNotes, postNote, deleteNote } from 'Utilities/services/notes';
+import { getNotes, postNote, deleteNote } from '../../util/services/notes';
 
-import NoteForm from 'Components/NoteForm/index';
-import NoteList from 'Components/NoteList/index';
+import NoteForm from '../NoteForm/index';
+import NoteList from '../NoteList/index';
 
 const NotesView = () => {
   const [notes, setNotes] = useState([]);
